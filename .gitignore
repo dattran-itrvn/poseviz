@@ -14,3 +14,6 @@ __pycache__/
 
 .idea/
 .snapshots/
+metrabs_eff2l_y4_384px_800k_28ds/
+poseviz.egg-info/
+venv/
