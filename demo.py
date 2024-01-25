@@ -4,7 +4,7 @@ import tensorflow_hub as tfhub
 
 def main():
     model = tfhub.load('metrabs_eff2l_y4_384px_800k_28ds')
-    image = tf.image.decode_jpeg(tf.io.read_file('Screenshot from 2024-01-24 17-10-35.jpg'))
+    image = tf.image.decode_jpeg(tf.io.read_file('2024-01-25-094456.jpg'))
     skeleton = 'smpl_24'
 
     # Predict
@@ -18,6 +18,7 @@ def main():
     joint_edges = model.per_skeleton_joint_edges[skeleton].numpy()
     print(joint_names)
     print(joint_edges)
+    print(pred['poses3d'])
     visualize(image.numpy(), pred, joint_names, joint_edges)
 
     # Read the docs to learn how to

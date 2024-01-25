@@ -17,3 +17,5 @@ __pycache__/
 metrabs_eff2l_y4_384px_800k_28ds/
 poseviz.egg-info/
 venv/
+*.mp4
+*.jpg
